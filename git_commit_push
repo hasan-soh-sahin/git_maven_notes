@@ -1,0 +1,26 @@
+git clone http://gitlab..../abc/ABCD.git
+
+ABCD>mvn compile package -DproxySet=true -DproxyHost=someproxy... -DproxyPort=8080 -Dhttp.proxyUser=<aUser> -Dhttp.proxyPassword=<ap> -Djavax.net.ssl.trustStore=D:\temp\jdk1.8.0_191\jre\lib\security\cacerts
+
+git status
+
+ABCD>git rm --cached  test-classes
+ABCD>git add pom.xml
+D:\projects\ABCD>git add src/
+ABCD>git add target/ABC.jar
+
+ABCD>git commit -m "added some file comment it here"
+
+git push -u origin master
+
+---2nd
+git commit -m "AA first commit src, pom.xml, jar files"
+
+D:\projects\AA>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+git push -u origin master
